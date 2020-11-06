@@ -4,7 +4,7 @@ var ExpressPeerServer = require('peer').ExpressPeerServer;
  
 app.get('/', function(req, res, next) { res.send('Hello world!'); });
  
-var server = app.listen(9000);
+var server = app.listen(80);
  
 var options = {
     debug: true
