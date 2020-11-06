@@ -6,10 +6,11 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "peer": "^0.5.3",
+    "peerjs-server": "^0.2.9",
     "socket.io": "^2.3.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "cd ./client && yarn"
+    "start": "node server.js"
   }
 }
