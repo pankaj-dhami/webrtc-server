@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var app = express();
 var ExpressPeerServer = require('peer').ExpressPeerServer;
@@ -21,7 +22,7 @@ var options = {
  
  app.use('/peerjs', ExpressPeerServer(server, options));
  
- server.listen(80);
+ server.listen(process.env.PORT || 9000);
 
  server.on('connection', function(id) { //console.log(id) 
  });
