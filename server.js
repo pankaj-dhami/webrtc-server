@@ -22,7 +22,7 @@ var options = {
  
  app.use('/peerjs', ExpressPeerServer(server, options));
  
- server.listen(443);
+ server.listen(process.env.PORT || 9000);
 
  server.on('connection', function(id) { //console.log(id) 
  });
